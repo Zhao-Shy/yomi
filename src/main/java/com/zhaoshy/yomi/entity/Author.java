@@ -5,13 +5,12 @@ import lombok.Data;
 /****************************************
  * @author : zhaoshy
  * @description : 
- * @create_time : 2020/1/7 20:44
+ * @create_time : 2020/1/7 23:19
  ****************************************
  */
 
 @Data
-public class Book {
-    private Integer id;
+public class Author {
     private String name;
-    private String author;
+    private int age;
 }
