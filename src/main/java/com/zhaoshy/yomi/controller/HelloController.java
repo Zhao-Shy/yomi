@@ -2,6 +2,7 @@ package com.zhaoshy.yomi.controller;
 
 import com.zhaoshy.yomi.entity.Author;
 import com.zhaoshy.yomi.entity.Book;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,6 +23,9 @@ import java.util.*;
 
 @RestController
 public class HelloController {
+
+    @Autowired
+    private Book book;
     
     @GetMapping("/getGlobalData")
     public void getGlobalData(Model model) {
