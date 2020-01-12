@@ -1,6 +1,7 @@
 package com.zhaoshy.yomi.entity;
 
 import lombok.Data;
+import org.apache.ibatis.type.Alias;
 
 /****************************************
  * @author : zhaoshy
@@ -9,6 +10,7 @@ import lombok.Data;
  ****************************************
  */
 
+@Alias("book")
 @Data
 public class Book {
     private Integer id;

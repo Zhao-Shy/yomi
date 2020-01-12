@@ -24,6 +24,11 @@ import java.util.*;
 @RestController
 public class HelloController {
 
+    @RequestMapping("/index")
+    public String index() {
+        return "index";
+    }
+
     @Autowired
     private Book book;
     
