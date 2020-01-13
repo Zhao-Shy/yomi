@@ -1,4 +1,4 @@
-package com.zhaoshy.yomi.mapper;
+package com.zhaoshy.yomi.mapper1;
 
 import com.zhaoshy.yomi.entity.Book;
 import org.apache.ibatis.annotations.Mapper;
@@ -12,7 +12,6 @@ import java.util.List;
  ****************************************
  */
 
-@Mapper
 public interface BookMapper {
     int addBook(Book book);
     int deleteBookById(Integer id);

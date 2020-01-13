@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /****************************************
  * @author : zhaoshy
- * @description : 
+ * @description : 配置自定义拦截器拦截路径
  * @create_time : 2019/12/8 15:43
  ****************************************
  */

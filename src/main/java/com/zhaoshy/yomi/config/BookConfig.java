@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ImportResource;
 
 /****************************************
  * @author : zhaoshy
- * @description : 
+ * @description : 使用 xml 注册 bean
  * @create_time : 2019/12/8 15:43
  ****************************************
  */

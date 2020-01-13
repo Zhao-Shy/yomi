@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhaoshy.yomi.mapper1.BookMapper">
+    <insert id="addBook" parameterType="book">
+        insert into book (name, author) values (#{name}, #{author})
+    </insert>
+    <delete id="deleteBookById" parameterType="int">
+        delete from book where id = #{id}
+    </delete>
+    <update id="updateBookById" parameterType="book" >
+        update book set #{name}, #{author} where id = #{id}
+    </update>
+    <select id="getBookById" parameterType="int" resultType="book">
+        select * from book where id = #{id}
+    </select>
+    <select id="getAllBooks" resultType="book">
+        select * from book
+    </select>
+
+</mapper>
