@@ -3,6 +3,8 @@ package com.zhaoshy.yomi.entity;
 import lombok.Data;
 import org.apache.ibatis.type.Alias;
 
+import java.io.Serializable;
+
 /****************************************
  * @author : zhaoshy
  * @description : 
@@ -12,7 +14,7 @@ import org.apache.ibatis.type.Alias;
 
 @Alias("book")
 @Data
-public class Book {
+public class Book implements Serializable {
     private Integer id;
     private String name;
     private String author;
